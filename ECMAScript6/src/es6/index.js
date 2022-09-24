@@ -75,3 +75,4 @@ console.log(globalVar);
 const a = "b"; // constante que no cambia
 // a = "a" // error
 console.log(a);
+
