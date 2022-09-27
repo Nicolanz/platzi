@@ -40,3 +40,34 @@ const names = [
     "Zarate",
     "Guarin", // <-- Trailing comma
 ]
+
+// Async - await 
+// Promise
+const worldHello = () => {
+    return new Promise ((resolve, reject)=>{
+        (false) // error on false and resolved promise on true 
+        ?   setTimeout( () => resolve("Hello world"), 3000)
+        :   reject(new Error ('Mensaje error'))
+    })
+}
+// resolve prmise with async await 
+const resolvePromise = async () => { // Function declaration
+    const result = await worldHello(); // await syntax
+    console.log(result);
+    console.log("Impesion!");
+    return result;
+} 
+resolvePromise();
+
+// catch error on promise with async - await
+const anotherFunction = async () =>{
+    try {
+        const result = await worldHello();
+        console.log(result);
+    }  catch (e) {
+        console.log(`Se ejecuto el error ${e.message}`);
+    }
+}
+
+anotherFunction();
+
