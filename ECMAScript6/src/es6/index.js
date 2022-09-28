@@ -86,7 +86,7 @@ let objTmp = {
 }
 console.log(objTmp);
 // es6
-obj = {
+let obj = {
     name,
     age
 }
