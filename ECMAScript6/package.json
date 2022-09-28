@@ -12,6 +12,7 @@
   },
   "author": "Nicolas Zarate",
   "license": "ISC",
+  "type": "module",
   "devDependencies": {
     "@babel/core": "^7.6.0",
     "@babel/node": "^7.8.0",
