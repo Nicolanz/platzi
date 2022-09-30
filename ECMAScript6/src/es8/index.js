@@ -50,7 +50,7 @@ const worldHello = () => {
         :   reject(new Error ('Mensaje error'))
     })
 }
-// resolve prmise with async await 
+// resolve pormise with async await 
 const resolvePromise = async () => { // Function declaration
     const result = await worldHello(); // await syntax
     console.log(result);
