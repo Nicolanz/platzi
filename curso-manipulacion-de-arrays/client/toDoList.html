@@ -14,16 +14,30 @@
         const toDoList = [
             { title: 'Entrar a platzi', done: true },
             { title: 'Entrar a la Intranet', done: false },
+            { title: 'Hacer el almuerzo', done: false },
         ]
         const element = document.getElementById('main')
         
         toDoList.forEach((item, index, array)=>{
-            element.innerHTML += `<input type='checkbox' id=task-${index + 1} ><label for='${index + 1}'>Este es mi producto #${index + 1}</label> <br />`
-            const currInput = document.getElementById(`task-${index + 1}`)
-            console.log(currInput);
+            const input = document.createElement('input')
+            const label = document.createElement('label')
+            const br = document.createElement('br')
+
+            input.setAttribute('type', 'checkbox')
+            input.setAttribute('id', `task-${index + 1}`)
+            label.setAttribute('for', 'task-${index + 1}')
+
             if (item.done){
-                currInput.checked = true;
+                input.checked = true;
             }
+
+            label.appendChild(document.createTextNode(`${item.title}`))
+            label.appendChild(input)
+
+           
+            element.appendChild(label)
+            element.appendChild(br)
+
         })
     </script>
 </body>
