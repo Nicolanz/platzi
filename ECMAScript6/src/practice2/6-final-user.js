@@ -5,5 +5,4 @@ export default async function handleProfileSignup(firstName, lastName, filename)
     return Promise
     .allSettled([promiseResolved.default(firstName, lastName), promiseRejected.default(filename)])
     .then(res => res)
-                    
 }
