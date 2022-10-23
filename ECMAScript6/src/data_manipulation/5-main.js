@@ -5,4 +5,5 @@ console.log("Next generation")
 console.log('People')
 console.log('Another one')
 console.log('Saturday')
+console.log('Sunday')
 console.log(createInt8TypedArray(10, 2, 89));
