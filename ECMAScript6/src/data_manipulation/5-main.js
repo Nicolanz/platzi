@@ -9,4 +9,5 @@ console.log('Sunday')
 console.log('Monday')
 console.log('Tuesday')
 console.log('ednesday')
+console.log('Thursday')
 console.log(createInt8TypedArray(10, 2, 89));
