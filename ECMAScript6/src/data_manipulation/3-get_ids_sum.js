@@ -1,3 +1,8 @@
-export default function getStudentIdsSum(list){
-    return list.reduce((prev, curr)=> curr.id + prev.id)
+
+export default function getStudentIdsSum(getListStudents){
+    const total = getListStudents.reduce((total, currElement) =>{
+        return total + currElement.id
+    }, 0)
+
+    return total
 }
