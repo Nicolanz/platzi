@@ -186,3 +186,10 @@ const generator = holaMundo()
 console.log(generator.next());
 console.log(generator.next());
 console.log(generator.next());
+
+console.log(`We're goin to apply changes on mondat first`);
+if (true){
+    console.log("We did it");
+} else {
+    console.log("We didn't do it ");
+}
