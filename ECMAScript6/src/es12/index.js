@@ -14,6 +14,8 @@ console.log(mensaje.replaceAll("JavaScript", "Python"));
 console.log(mensaje.replaceAll(/a/g, "*")); 
 // 'J*v*Script es m*r*villoso, con J*v*Script puedo cre*r el futuro de l* web.'
 
+console.log("Apply changes year 2024")
+
 
 // Métodos privados de clases
 // Por defecto, las propiedades y métodos de una clase en JavaScript son públicas, es decir, se puede acceder a ellos fuera de la clase.
